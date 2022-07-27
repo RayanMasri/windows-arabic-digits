@@ -1,0 +1,2 @@
+This has been accomplished by modifiying this keyboard library so that when typing english digits, they are remapped to arabic digits.
+But since ctypes does not support arabic digits, an alternative was used where the digits were copied from a dictionary to the clipboard and pasted, but since this removes your previous clipboard I used a timer from threading which waits a few seconds after you type an arabic digit and recopies your original clipboard, although typing another arabic digit resets this timer
